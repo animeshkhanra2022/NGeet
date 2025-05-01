@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121213;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatbot-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #111727;
+}
+
+.chat-header {
+  background: #0b1320;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid #36e2ec;
+  text-align: center;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+.chat-box .user {
+  text-align: right;
+  color: #36e2ec;
+}
+
+.chat-box .bot {
+  text-align: left;
+  color: #a4a8b4;
+  white-space: pre-wrap;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #36e2ec;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 15px;
+  background: #0b1320;
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 15px 25px;
+  background: #36e2ec;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.chat-input button:hover {
+  background: #29bfc9;
+}
+.song-card {
+  background: #0b1320;
+  border: 1px solid #36e2ec55;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s ease;
+}
+.song-card:hover {
+  background: #18263a;
+}
+.song-card img {
+  width: 90px;
+  height: 88px;
+  border-radius: 8px;
+}
+
+.song-card .info {
+  display: flex;
+  flex-direction: column;
+}
+.song-card .info .title {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.song-card .info .artist {
+  margin-left: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.song-card audio {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+iframe {
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+}

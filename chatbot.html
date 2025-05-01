@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music AI Chatbot</title>
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+  <div class="chatbot-screen">
+    <div class="chat-header">🎧NGeet</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Ask me for songs or artists..."
+        onkeypress="handleKey(event)"
+      />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <audio id="audio-player" controls style="display: none;"></audio>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
